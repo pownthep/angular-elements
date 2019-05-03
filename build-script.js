@@ -7,12 +7,12 @@ const concat = require('concat');
         './dist/runtime.js',
         './dist/polyfills.js',
         './dist/scripts.js',
-        './dist/main.js'
+        './dist/main.js',
     ]
     
     await fs.ensureDir('elements');
     
-    await concat(files, 'elements/elements.js');
+    await concat(files, 'elements/angular-elements.js');
     await fs.copyFile(
         './dist/styles.css',
         'elements/styles.css'

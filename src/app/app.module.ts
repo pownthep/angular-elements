@@ -3,17 +3,16 @@ import { NgModule, Injector } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 
 // Import the components
-import { AppComponent } from './app.component';
+import { CustomElementComponent } from './custom-element/custom-element.component';
 
 // Insert all the components you want to create as custom Elements into this array
 const components = [
-  AppComponent,
-
+  CustomElementComponent
 ];
 
 @NgModule({
   declarations: [
-    ...components,
+    ...components
   ],
   imports: [
     BrowserModule
@@ -26,9 +25,8 @@ export class AppModule {
 
   ngDoBootstrap() {
     const elements: any[] = [
-      
       //[Component name, 'selector name']
-      [AppComponent, 'app-comp']
+      [CustomElementComponent, 'custom-element']
       
     ];
 
@@ -37,5 +35,4 @@ export class AppModule {
       customElements.define(name, el);
     }
   }
-
 }
