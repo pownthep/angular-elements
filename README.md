@@ -1,7 +1,7 @@
-# Angular Elements Template
+# Angular Elements Demo
 A quick and easy way to get started making Angular Elements without the hassle.
 
-Demo: https://pownthep.github.io/Angular-Elements-Template/
+Demo: https://pownthep.github.io/Angular-Elements-Demo/
 
 ## 1. Clone Repository
 ```
