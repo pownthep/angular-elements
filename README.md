@@ -71,7 +71,7 @@ export class AppModule {
 ```bash
 npm run build:elements
 ```
-If the build is successful, you should see a new folder call 'elements' which the script and the css file. 
+If the build is successful, you should see a new folder call 'elements' which has the script and the css file that you can use in any other web development project. 
 For example, 
 ```html
 <!doctype html>
@@ -82,7 +82,7 @@ For example,
 </head>
 <body>
   <custom-element></custom-element>
-  <script src="elements.js"></script>
+  <script src="angular-elements.js"></script>
 </body>
 </html>
 ```
